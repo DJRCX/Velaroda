@@ -4,6 +4,12 @@ A private ofrenda for Día de los Muertos. You place a name, a photo, a food, a 
 
 Photos, words, and the finished inscription stay in this browser. The weights download once from Hugging Face. After that, lighting another candle does not need a network connection, and nothing you type is sent to a model host.
 
+## Live
+
+[https://djrcx.github.io/Velaroda/](https://djrcx.github.io/Velaroda/)
+
+GitHub Pages cannot send the isolation headers the dev server uses, so the processor build runs on one thread there. The graphics-chip build is unchanged.
+
 ## Run it
 
 ```bash

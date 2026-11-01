@@ -21,6 +21,7 @@ function post(message: Record<string, unknown>) {
 
 function configureRuntime(message: GenerateMessage) {
   const wasm = env.backends.onnx.wasm
+  if (!wasm) throw new Error('The model runtime is missing.')
   wasm.wasmPaths = {
     mjs: message.wasmMjs,
     wasm: message.wasmBinary,

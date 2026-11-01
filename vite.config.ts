@@ -7,6 +7,7 @@ const isolation = {
 }
 
 export default defineConfig({
+  base: process.env.GITHUB_PAGES === 'true' ? '/Velaroda/' : '/',
   plugins: [react()],
   server: { headers: isolation },
   preview: { headers: isolation },
